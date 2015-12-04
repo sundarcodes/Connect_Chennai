@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="well">
+    <legend>Post your details</legend>
+    <%= simple_form_for @help_request ,:url => home_saveHelp_path, :method => :post do |f| %>
+      <%= f.input :name %>
+      <%= f.input :apt %>
+      <%= f.input :street %>
+      <%= f.input :locality %>
+      <%= f.input :pincode %>
+      <%= f.input :city %>
+      <%= f.input :phone %>
+      <%= f.input :need_of_hour %>
+      <%= f.submit 'Post', class: "btn btn-primary btn-lg"  %>
+    <% end %>
+  </div>
+</div>

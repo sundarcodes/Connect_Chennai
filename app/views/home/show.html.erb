@@ -1,0 +1,8 @@
+<h1>Welcome to index page</h1>
+
+<div class="form-class text-center">
+  <%= simple_form_for @user_to_be_searched ,:url => friends_search_path, :method => :post do |f| %>
+    <%= f.input :login, label: false, placeholder: 'Search by email or username'%>
+    <%= f.submit 'Search', class: "btn btn-primary btn-lg"  %>
+  <% end %>
+</div>
